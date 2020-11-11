@@ -1,0 +1,330 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,700&&display=swap');
+body
+{
+  background:#24292e;
+  margin:0;
+}
+*
+{
+    margin:0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+h1
+{
+  font-family:Montserrat;
+  color:#f1f1f1;
+  position:absolute;
+  left:82%;
+  top:90%;
+  letter-spacing:2px;
+  z-index: 3;
+}
+.bg-lg
+{
+  background: linear-gradient(to right, #c94b4b, #4b134f); 
+    background: linear-gradient(to right, #1a2a6c, #b21f1f, #fdbb2d); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(to right, #642b73, #c6426e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(to right, #283c86, #45a247); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(to right, #ee0979, #ff6a00); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+ /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+;
+  background-clip:text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.rightside
+{
+  position: absolute;
+  height: 100vh;
+  top:0%;
+  left: calc(100% - 220px);
+  background: #2f363d ;
+  min-width: 220px;
+  table
+  {
+    color: #999999;
+    text-align: left;
+    border: none;
+    width: 100%;
+    tr
+    {
+      padding: 5px;
+      &:nth-child(even)
+      {
+        background:#24292e;
+      }
+    }
+    td,th{
+      padding: 10px;
+    }
+  }
+  ul
+  {
+    list-style: none;
+    padding: 10px;
+    li
+    {
+      padding: 10px;
+    }
+  }
+
+  .no-trans
+  {
+    color: #777; 
+  }
+}
+.hding
+{
+  font-weight: 600;
+  color:#999999;
+  text-transform: uppercase;
+}
+.sideb
+{
+  height:100vh;
+  background:#2f363d;
+  position: absolute;
+  max-width:220px;
+  padding-top: 0px;
+  .active
+  {
+    background:#0984e3;
+    border-radius: 3px;
+    color:#f1f1f1;
+    box-shadow: 0 2px 8px rgba(140,140,140,0.16), 0 3px 6px rgba(140,140,140,0.23);
+  }
+  .acc-ico
+  {
+    font-weight: 600;
+    text-transform: uppercase;
+    padding:5px  0px;
+    margin-bottom: 10px;
+    i
+    {
+        margin-left: auto;
+    }
+  }
+  ul
+  {
+    list-style:none;
+    padding:0px 15px;
+    margin: 0;
+    li
+    {
+      padding:10px;
+      color:#999999;
+      text-align: left;
+      display: flex;
+      align-items: center;
+    //   text-transform: uppercase;
+      font-size: 15px;
+      margin-top:5px ;
+      cursor: pointer;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      // width:;
+      i
+      {
+          margin-right: 10px;
+      }
+      &:hover
+      {
+        // background:#00b894;
+        border-radius: 3px;
+        color:#f1f1f1;
+      }
+    }
+  }
+}
+.main
+{
+    margin:0 220px;
+    position: relative;
+    height: 100vh;
+    overflow-y: auto;
+    // background:;
+    .frrow
+    {
+        display: grid;
+        grid-template-columns: 2fr 3fr;
+        gap: 20px;
+        padding: 20px;
+    }
+    .blgraph
+    {
+      max-height: 250px;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .blwid
+    {
+        background: #2f363d;
+        color: #b1b1b1;
+        padding: 20px;
+        max-height: 250px;
+        
+        h2
+        {
+            color: #f2f2f2;
+            font-size: 1.5em;
+            font-weight: 500;
+            margin:10px 5px;
+        }
+        p{
+            font-size: 12px;
+        }
+        button{
+            font-size: 16px;
+            padding: 10px 14px;
+            background: #16a085;
+            border: none;
+            border-radius: 8px;
+            color:#f1f1f1;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+    }
+
+}
+.crds 
+{
+  position: relative;
+  i
+  {
+    color: #f1f1f1;
+    padding: 2px;
+    background: rgba(22,22,22,0.6);
+    position: absolute;
+    left: 1%;
+    top:45%;
+    z-index: 2;
+    cursor: pointer;
+    border-radius:50%;
+    outline: none;
+  }
+  h3
+  {
+    color: #999999;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+  }
+}
+.dbcard
+{
+  padding: 20px;
+  color: #f1f1f1;
+  margin:15px;
+  border-radius: 4px;
+  border:none;
+  min-width: 150px;
+  p
+  {
+    font-size: 14px;
+  }
+}
+.cvisa
+{
+  background: linear-gradient(#e77e21d9,#e77e21d9),url("https://www.pngfind.com/pngs/m/548-5488065_world-map-indonesia-png-transparent-png.png");
+  background-size: cover;
+
+}
+.cmast
+{
+  background: linear-gradient(#2ecc71d9,#2ecc71d9),url("https://www.pngfind.com/pngs/m/548-5488065_world-map-indonesia-png-transparent-png.png");
+  background-size: cover;
+
+}
+.crup
+{
+  background: linear-gradient(#3498dbd9,#3498dbd9),url('https://lh3.googleusercontent.com/proxy/QMAxOyAJbZ8qBENwRwnn-TYgFxdXXc50hGRwXX4d1t3HPiKL9tLhLz5TtUUFIg3aThzVqTdLzh34JeXa3Lc0RMbiVi7qGSgsrIzoHggrHd2TSet7dxo5Wi03V6mJwV6JiGBOsuJAHRUGmXKiH-A0lklHF5Zcavsl103LopFp6Rk_mD0aswMU6pu0jLUL1KbiiYB_9GY2TCzxMNo');
+  background-size: cover;
+
+}
+.act-card
+{
+  padding: 2px 5px;
+  // background: #f1f1f1;
+  color:#f1f1f1;
+  background: #45a247;
+  border-radius: 3px;
+  margin-top: 10px;
+  display: inline-block;
+}
+#opr-1,#opr-2{
+  transition: all 0.5s ease-out;
+  transition: max-height 0.5s cubic-bezier(0, 1, 0, 1);
+  outline: none;
+  overflow: hidden;
+}
+.flxcard
+{
+  display: flex;
+  
+}
+#ygn
+{
+  max-width: 220px;
+  overflow: hidden;
+}
+.acc-num , .acc-ifsc
+{
+  font-size: 15px !important;
+  line-height: 25px;
+  span
+  {
+    text-decoration: underline;
+    cursor: pointer;
+    color: #0984e3;
+  }
+}
+.opt
+{
+  margin: 5px 20px;
+  padding: 10px;
+  background: #2f363d;
+  h3{
+    color: #d1d1d1;
+  }
+  &-pay
+  {
+    color: #b1b1b1;
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+
+    &--cont
+    {
+      padding: 10px;
+      text-align: center;
+      i
+      {
+        width: 40px;
+        height: 40px;
+        color: #f1f1f1;
+        border-radius: 50%;
+        font-size: 32px;
+        // background: #2e86de;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10px auto;
+      }
+      p
+      {
+        color: #f1f1f1;
+        cursor: pointer;
+      }
+    }
+
+  }
+}
+.adsss
+{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}

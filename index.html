@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Dark ui</title>
+</head>
+<body>
+    <h1><span class='bg-lg'>Horcrux</span> Skie</h1>
+<div class='sideb'>
+    <img style="margin:5px 10%;" src="https://upload.wikimedia.org/wikipedia/en/thumb/8/85/Yes_Bank_logo.svg/1200px-Yes_Bank_logo.svg.png" width="80%">
+
+    <ul>
+        <li class="acc-ico" onclick="toggle(1)">Options <i class="material-icons">keyboard_arrow_up</i></li>
+        <div id="opr-1">
+            <li class="active"  onclick="activate(0,this)" id='0'> <i class="material-icons">dashboard</i> Dashboard</li>
+            <li onclick="activate(1,this)" id='1'><i class="material-icons" >account_balance_wallet</i> Balance</li>
+            <li onclick="activate(2,this)" id='2'><i class="material-icons" >account_circle</i> Accounts</li>
+            <li onclick="activate(3,this)" id='3'><i class="material-icons" >payment</i> Cards</li>
+            <li onclick="activate(4,this)" id='4'><i class="material-icons" >local_offer</i> Shopping</li>
+            <li onclick="activate(5,this)" id='5'><i class="material-icons" >help</i> Get help</li>  
+        </div>
+        <li class="acc-ico" onclick="toggle(2)">Insurance <i class="material-icons">keyboard_arrow_down</i></li>
+        <div id="opr-2" style="max-height: 0px;overflow: hidden;">  
+            <li class=""> <i class="material-icons">airplay</i> Dashboard</li>
+            <li><i class="material-icons">account_balance_wallet</i> Balance</li>
+            <li><i class="material-icons">account_circle</i> Accounts</li>
+            <li><i class="material-icons">payment</i> Cards</li>
+            <li><i class="material-icons">local_offer</i> Shopping</li>
+            <li><i class="material-icons">help</i> Get help</li>  
+        </div>
+    </ul>
+</div>
+<div class="main">
+    <div class="frrow">
+
+    <div class="blwid">
+        <p>Total Balance</p>
+        <h2>₹ 45,000.00</h2> 
+        <p>as of <span id='dnw'></span></p>
+        <p class="acc-num">Account number : <span>1243423145678</span></p>
+        <p class="acc-ifsc">IFSC Code : <span>YBINUJM8989079</span></p>
+
+        <button>Statement</button>
+    </div>
+    <div class="blgraph">
+        <img src="https://i.ytimg.com/vi/GR4PdFV0kko/maxresdefault.jpg" alt="" width="100%">   
+    </div>
+    
+    </div>
+    <div class="opt">
+        <h3>Popular options</h3>
+        <div class="opt-pay">
+
+        <div class="opt-pay--cont">
+            <i class="material-icons" style="background: #ee5253;">local_gas_station</i>
+            <p>Gas</p>
+        </div>
+        <div class="opt-pay--cont">
+            <i class="material-icons" style="background: #2e86de;">opacity</i>
+            <p>Water</p>
+        </div>
+        <div class="opt-pay--cont">
+            <i class="material-icons" style="background: #ff9f43 ;">electrical_services</i>
+            <p>Electricity</p>
+        </div>
+        <div class="opt-pay--cont">
+            <i class="material-icons" style="background: #10ac84;">stay_current_portrait</i>
+            <p>Mobile</p>
+        </div>
+        <div class="opt-pay--cont">
+            <i class="material-icons" style="background: #8c7ae6;">calculate</i>
+            <p>Tax</p>
+        </div>
+        <div class="opt-pay--cont">
+            <i class="material-icons" style="background:#e1b12c ;">airplay</i>
+            <p>Television</p>
+        </div>
+        <div class="opt-pay--cont">
+            <i class="material-icons" style="background: #e84118;">widgets</i>
+            <p>More</p>
+        </div>
+
+    </div>
+</div>
+<div class="adsss">
+<img src="https://img.etimg.com/photo/msid-70605337,imgsize-502079/YESBANK_PL.jpg" width="100%">
+<img src="https://i.pinimg.com/736x/eb/ed/77/ebed7790cdf8c70bf36d11ed2fe8904a.jpg" width="100%">
+
+</div>
+</div>
+<div class="rightside">
+    <ul>
+        <li class="hding">Last Transactions</li>
+        <li class="no-trans">No Transactions Found</li>
+        <div class="tbl">
+            <table cellspacing="0" cellpadding="0">
+                <thead>
+                    <tr>
+                        <th>info</th>
+                        <th>amnt</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>ATM/Dr.</td>
+                        <td>1000.00</td>
+                    </tr>
+
+                    <tr>
+                        <td>NEFT/Cr.</td>
+                        <td>850100.00</td>
+                    </tr>
+
+                    <tr>
+                        <td>ATM/Dr</td>
+                        <td>2500.00</td>
+                    </tr>
+
+                    <tr>
+                        <td>POS/Dr</td>
+                        <td>200.00</td>
+                    </tr>
+                    <tr>
+                        <td>ATM/Dr</td>
+                        <td>2500.00</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </ul>
+    <div class="crds">
+        <h3>Cards</h3>
+        <i class="material-icons" onclick="prev()">chevron_left</i>
+        <div id='ygn'>
+            <div class="flxcard" id='casd'>
+                <div class="dbcard cvisa">
+                    <img src='visa.png' width="60px">
+                    <p>xxxx xxxx xx12 8787</p>
+                    <p class="act-card">Active</p>
+                </div>
+                <div class="dbcard cmast">
+                    <img src='https://www.transparentpng.com/thumb/mastercard/mastercard-png-8.png' width="60px">
+                    <p>xxxx xxxx xx78 2127</p>
+                    <p class="deact-card">Deactive</p>
+                </div>
+                <div class="dbcard crup">
+                    <img src="https://www.pngkey.com/png/full/129-1290304_file-rupay-logo-rupay-card.png" width="60px" alt="" srcset="">
+                    <p>xxxx xxxx xx45 3437</p>
+                    <p class="act-card">Active</p>
+                </div>
+            </div>
+        </div>
+        <i class="material-icons" style="left:100%;transform:translateX(-100%)" onclick="next()">chevron_right</i>
+
+    </div>
+</div>
+</body>
+</html>
+<script>
+    let ind = 0 ;
+    document.getElementById('dnw').innerHTML=new Date();
+    const toggle = (numb) => {
+        console.log(numb)
+        const elem = document.getElementById('opr-'+numb); 
+        elem.style['max-height'] = elem.style['max-height'] === '0px'?'400px':'0px';
+        if(numb===1)
+        {
+            const elem2 = document.getElementById('opr-2')
+            elem2.style['max-height'] = '0px'            
+        }
+        else
+        {
+            const elem2 = document.getElementById('opr-1')
+            elem2.style['max-height'] = '0px'        
+            
+        }
+    }
+    const activate = (ind,e) => {
+        for(let i = 0; i<6;i++)
+        {
+            document.getElementById(i).classList=[];
+        }
+        console.log(ind,e)
+        e.classList=["active"]
+    }
+    const next = () => {
+        if(ind<2)
+            ind+=1;
+        document.getElementById('casd').style= `transform:translateX(-${100*ind}%)`
+    }
+    const prev = () => {
+        if(ind>0)
+            ind-=1;
+            document.getElementById('casd').style= `transform:translateX(-${100*ind}%)`
+
+    }
+</script>
